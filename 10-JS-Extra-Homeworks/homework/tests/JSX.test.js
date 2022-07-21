@@ -12,35 +12,35 @@ const {
 
 
 describe('deObjetoAmatriz(objeto)', function() {
-  it('should return an array, where each element represents a key-value pair in the form of an array.', function() {
+  xit('should return an array, where each element represents a key-value pair in the form of an array.', function() {
     expect(deObjetoAmatriz({ x: 1, y: 2 })).toEqual([["x" , 1],["y" , 2]]);
     expect(deObjetoAmatriz({ x: 10, y: 25 })).toEqual([["x" , 10],["y" , 25]]);
   });
 });
 
 describe('numberOfCharacters(string)', function() {
-  it('should return an object with the characters and the number of times they appear as a key-value pair', function() {
+  xit('should return an object with the characters and the number of times they appear as a key-value pair', function() {
     expect(numberOfCharacters("sktpwrroqstkrpwwsqtqopwktsd")).toEqual({s:4, k:3, t:4, p:3, w:4, r:3, o:2, q:3, d:1 });
     expect(numberOfCharacters("adsjfdsfsfjsdjfhacabcsbajda")).toEqual({ a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 });
   });
 });
 
 describe('capToFront(s)', function() {
-    it('should return all capital letters at the beginning of the word.', function() {
+   xit('should return all capital letters at the beginning of the word.', function() {
     expect(capToFront("soyHENRY")).toEqual("HENRYsoy");
     expect(capToFront("DESArrollaDOR")).toEqual("DESADORrrolla");
   });
 }); 
 
 describe('asAmirror(str)', function() {
-  it('should return the string recieved with all the words reversed as a mirror', function() {
+  xit('should return the string recieved with all the words reversed as a mirror', function() {
     expect(asAmirror("I love you so much!")).toBe("I evol uoy os !hcum");
     expect(asAmirror("The Henry Challenge is close!")).toBe("ehT yrneH egnellahC si !esolc");
   });
 });
 
 describe('capicua(numero)', function() {
-  it('should return Es capicua if the number is read from right to left', function() {
+  xit('should return Es capicua if the number is read from right to left', function() {
     expect(capicua(12321)).toEqual("Es capicua");
     expect(capicua(1111)).toEqual("Es capicua");
     expect(capicua(105217)).toEqual("No es capicua");
@@ -50,7 +50,7 @@ describe('capicua(numero)', function() {
 });  
 
 describe('deleteAbc(cadena)', function() {
-  it('should return the modified string if it has the letters abc or the same string otherwise', function() {
+  xit('should return the modified string if it has the letters abc or the same string otherwise', function() {
     expect(deleteAbc("abcefgh")).toEqual("efgh");
     expect(deleteAbc("abc")).toEqual("");
     expect(deleteAbc("plural")).toEqual("plurl");
